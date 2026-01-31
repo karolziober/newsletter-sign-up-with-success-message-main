@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-preset-1: 700 56px/100% "Roboto", sans-serif;
+  --text-preset-1-mobile: 700 40px/100% "Roboto", sans-serif;
+  --text-preset-2-bold: 700 16px/150% "Roboto", sans-serif;
+  --text-preset-2-regular: 400 16px/150% "Roboto", sans-serif;
+  --text-preset-3: 700 12px/150% "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #36384d;*/
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  color: #242742;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+
+h1,
+p {
+  margin-block-end: 24px;
+}
+h1 {
+  font: var(--text-preset-1-mobile);
+}
+p,
+li {
+  font: var(--text-preset-2-regular);
+}
+
+.main-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.form-side {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.non-form-section {
+  margin-block-end: 40px;
+  /* margin-inline-start: 16px;
+  margin-inline-end: 16px; */
+}
+.email-input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  list-style-type: none;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin-block-end: 8px;
+}
+li img {
+  margin-inline-end: 16px;
+  align-self: flex-start;
+}
+
+.list img {
+  width: 21px;
+}
+
+.info-graphic {
+  display: flex;
+  justify-content: center;
+  margin-block-end: 40px;
+}
+.info-graphic img {
+  width: 100%;
+}
+
+/* FORM SECTION */
+label {
+  margin-block-end: 8px;
+  font: var(--text-preset-3);
+}
+
+input[type="email"] {
+  border: 1px solid #949494;
+  margin-block-end: 24px;
+  border-radius: 8px;
+  padding: 16px;
+}
+input[type="email"].error {
+  border: 1px solid #ff6155;
+  background-color: #ffe0de;
+}
+input[type="email"].error::placeholder {
+  color: #ff6155;
+}
+.email-labels {
+  display: flex;
+  justify-content: space-between;
+}
+.error-msg {
+  /* display: none; */
+  color: #ff6155;
+}
+/* BUTTON BASE */
+.btn {
+  background-color: #242742;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-block-end: 40px;
+}
+/* SUCCESS MESSAGE */
+.success {
+  background-color: white;
+  display: none;
+}
+main.success-state .main-container {
+  display: none;
+}
+main.success-state .success {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  min-height: 90vh;
+}
+.success-icon img {
+  width: 64px;
+  margin-block-start: 64px;
+}
+.success-heading {
+  font: var(--text-preset-1-mobile);
+  margin-block-end: 32px;
+  margin-block-start: 32px;
+}
+.success-message {
+  font: var(--text-preset-2-regular);
+}
+.success button {
+  margin-top: auto;
+}

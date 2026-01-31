@@ -1,52 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
 
-  <!-- Sign-up form start -->
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-  Stay updated!
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="">
+      <article class="main-container">
+        <section class="form-side">
+          <section class="non-form-section">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="list">
+              <li>
+                <img src="assets/images/icon-success.svg" />
+                Product discovery and building what matters
+              </li>
+              <li>
+                <img src="assets/images/icon-success.svg" />
+                Measuring to ensure updates are a success
+              </li>
+              <li>
+                <img src="assets/images/icon-success.svg" />
+                And much more!
+              </li>
+            </ul>
+          </section>
 
-  Join 60,000+ product managers receiving monthly updates on:
+          <!-- Sign-up form start -->
+          <form class="email-input-section">
+            <div class="email-labels">
+              <label for="email">Email address</label>
+              <label for="email" class="error-msg">Valid mail required</label>
+            </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="email@company.com"
+              class="error"
+            />
 
-  Email address
-  email@company.com
+            <button type="submit" class="btn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+          <!-- Sign-up form end -->
+        </section>
+        <section class="info-graphic">
+          <img src="assets/images/illustration-sign-up-mobile.svg" />
+        </section>
+      </article>
 
-  Subscribe to monthly newsletter
+      <!-- Success message start -->
 
-  <!-- Sign-up form end -->
+      <section class="success">
+        <div class="success-icon">
+          <img src="assets/images/icon-success.svg" />
+        </div>
+        <h2 class="success-heading">Thanks for subscribing!</h2>
+        <span class="success-message"
+          >A confirmation email has been sent to ash@loremcompany.com. Please
+          open it and click the button inside to confirm your
+          subscription.</span
+        >
+        <button type="button" class="btn">Dismiss message</button>
+      </section>
 
-  <!-- Success message start -->
+      <!-- Success message end -->
+    </main>
 
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
