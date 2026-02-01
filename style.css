@@ -159,6 +159,26 @@ main.success-state .success {
   margin-top: auto;
 }
 
+/* TABLET */
+@media (min-width: 765px) {
+  body {
+    background-color: #36384d;
+    padding: 64px;
+  }
+
+  .main-container {
+    border-radius: 36px;
+  }
+
+  .form-side {
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+  }
+  .info-graphic img {
+    border-radius: 36px;
+  }
+}
+
 /* DESKTOP */
 @media (min-width: 1440px) {
   .btn:hover {
