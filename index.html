@@ -18,27 +18,37 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <main class="">
-      <article class="main-container">
+    <main>
+      <div class="main-container">
         <section class="form-side">
           <section class="non-form-section">
             <h1>Stay updated!</h1>
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
             <ul class="list">
               <li>
-                <img src="assets/images/icon-success.svg" />
+                <img
+                  src="assets/images/icon-success.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
                 Product discovery and building what matters
               </li>
               <li>
-                <img src="assets/images/icon-success.svg" />
+                <img
+                  src="assets/images/icon-success.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
                 Measuring to ensure updates are a success
               </li>
               <li>
-                <img src="assets/images/icon-success.svg" />
+                <img
+                  src="assets/images/icon-success.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
                 And much more!
               </li>
             </ul>
@@ -48,7 +58,7 @@
           <form class="email-input-section" novalidate>
             <div class="email-labels">
               <label for="email">Email address</label>
-              <label for="email" class="error-msg">Valid mail required</label>
+              <span class="error-msg" role="alert">Valid mail required</span>
             </div>
 
             <input
@@ -64,16 +74,28 @@
           </form>
           <!-- Sign-up form end -->
         </section>
-        <section class="info-graphic">
-          <img src="assets/images/illustration-sign-up-mobile.svg" />
+        <section class="pic-section">
+          <picture class="info-graphic">
+            <source
+              media="(min-width: 1440px)"
+              srcset="assets/images/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="assets/images/illustration-sign-up-mobile.svg"
+              alt="Illustration of a mobile device displaying newsletter notifications and icons"
+            />
+          </picture>
         </section>
-      </article>
+      </div>
 
       <!-- Success message start -->
 
-      <section class="success">
+      <section class="success" role="alert">
         <div class="success-icon">
-          <img src="assets/images/icon-success.svg" />
+          <img
+            src="assets/images/icon-success.svg"
+            alt="Success checkmark icon"
+          />
         </div>
         <h2 class="success-heading">Thanks for subscribing!</h2>
         <span class="success-message"
