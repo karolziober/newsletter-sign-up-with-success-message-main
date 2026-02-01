@@ -95,7 +95,7 @@ input[type="email"] {
   border-radius: 8px;
   padding: 16px;
 }
-input[type="email"].error {
+.email-input-section.error input[type="email"] {
   border: 1px solid #ff6155;
   background-color: #ffe0de;
 }
@@ -106,8 +106,12 @@ input[type="email"].error::placeholder {
   display: flex;
   justify-content: space-between;
 }
+
 .error-msg {
-  /* display: none; */
+  display: none;
+}
+.email-input-section.error .error-msg {
+  display: block;
   color: #ff6155;
 }
 /* BUTTON BASE */
@@ -124,6 +128,7 @@ input[type="email"].error::placeholder {
   border-radius: 8px;
   margin-block-end: 40px;
 }
+
 /* SUCCESS MESSAGE */
 .success {
   background-color: white;
@@ -152,4 +157,11 @@ main.success-state .success {
 }
 .success button {
   margin-top: auto;
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+  .btn:hover {
+    background: linear-gradient(to right, #ff6a3a, #ff527b);
+  }
 }
