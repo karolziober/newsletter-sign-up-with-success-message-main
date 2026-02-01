@@ -140,7 +140,7 @@ main.success-state .main-container {
 main.success-state .success {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 32px;
   min-height: 90vh;
 }
 .success-icon img {
