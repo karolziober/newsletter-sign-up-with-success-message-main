@@ -42,10 +42,14 @@ li {
   background-color: white;
   display: flex;
   flex-direction: column-reverse;
+  /* padding: 32px; */
+  gap: 40px;
 }
+
 .form-side {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-block-end: 32px;
 }
 .non-form-section {
   margin-block-end: 40px;
@@ -77,7 +81,7 @@ li img {
 .info-graphic {
   display: flex;
   justify-content: center;
-  margin-block-end: 40px;
+  /* margin-block-end: 40px; */
 }
 .info-graphic img {
   width: 100%;
@@ -126,7 +130,7 @@ input[type="email"].error::placeholder {
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
-  margin-block-end: 40px;
+  /* margin-block-end: 40px; */
 }
 
 /* SUCCESS MESSAGE */
@@ -162,20 +166,27 @@ main.success-state .success {
 /* TABLET */
 @media (min-width: 765px) {
   body {
+    display: flex;
     background-color: #36384d;
-    padding: 64px;
+    justify-content: center;
+    align-items: center;
+    padding: 72px;
   }
 
+  main {
+    width: min(100%, 955px);
+  }
   .main-container {
     border-radius: 36px;
+    padding: 40px;
   }
 
   .form-side {
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
+    padding: 0;
   }
   .info-graphic img {
     border-radius: 36px;
+    /* width: 100%; */
   }
 }
 
@@ -183,5 +194,16 @@ main.success-state .success {
 @media (min-width: 1440px) {
   .btn:hover {
     background: linear-gradient(to right, #ff6a3a, #ff527b);
+  }
+
+  .main-container {
+    /* background-color: white;
+  display: flex; */
+    flex-direction: row;
+    padding: 32px;
+  }
+
+  .form-side {
+    padding: 0;
   }
 }
