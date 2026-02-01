@@ -13,6 +13,7 @@
     />
 
     <link href="style.css" rel="stylesheet" />
+    <script src="/script.js" defer></script>
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -44,7 +45,7 @@
           </section>
 
           <!-- Sign-up form start -->
-          <form class="email-input-section">
+          <form class="email-input-section" novalidate>
             <div class="email-labels">
               <label for="email">Email address</label>
               <label for="email" class="error-msg">Valid mail required</label>
@@ -55,10 +56,9 @@
               name="email"
               type="email"
               placeholder="email@company.com"
-              class="error"
             />
 
-            <button type="submit" class="btn">
+            <button type="submit" class="btn" id="submit">
               Subscribe to monthly newsletter
             </button>
           </form>
@@ -81,7 +81,7 @@
           open it and click the button inside to confirm your
           subscription.</span
         >
-        <button type="button" class="btn">Dismiss message</button>
+        <button type="button" class="btn" id="dismiss">Dismiss message</button>
       </section>
 
       <!-- Success message end -->
