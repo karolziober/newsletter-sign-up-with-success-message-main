@@ -197,8 +197,7 @@ main.success-state .success {
   main {
     justify-items: center;
   }
-  h1,
-  h2 {
+  h1 {
     font: var(--text-preset-1);
   }
   .main-container {
