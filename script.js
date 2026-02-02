@@ -1,6 +1,5 @@
 "use strict";
 const main = document.querySelector("main");
-const btnSubmit = document.getElementById("submit");
 const btnDismiss = document.getElementById("dismiss");
 const emailInputSection = document.querySelector(".email-input-section");
 const emailInput = document.getElementById("email");
