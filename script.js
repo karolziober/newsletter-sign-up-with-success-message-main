@@ -21,8 +21,10 @@ emailInputSection.addEventListener("submit", (e) => {
 });
 
 // DISMISS MESSAGE
-btnDismiss.addEventListener("click", (e) => {
-  e.preventDefault();
-  main.classList.remove("success-state");
-  emailInput.value = "";
-});
+if (btnDismiss) {
+  btnDismiss.addEventListener("click", (e) => {
+    e.preventDefault();
+    main.classList.remove("success-state");
+    emailInput.value = "";
+  });
+}
